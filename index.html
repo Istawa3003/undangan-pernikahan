@@ -1,34 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Undangan Pernikahan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Wedding of Fey & Mbi</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,400&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <section class="hero">
-    <h1>Undangan Pernikahan</h1>
-    <h2>Fetty Ayu Pramitha & Feby Nugraha</h2>
-    <p>Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i</p>
-  </section>
+    <div id="welcome-screen">
+        <div class="container" data-aos="fade-up">
+            <p class="small text-uppercase mb-4" style="letter-spacing: 5px;">The Wedding of</p>
+            <h1 class="display-3 mb-5">Fetty Ayu Pramitha <br> & <br> Feby Nugraha</h1>
+            <p class="font-serif fst-italic mb-2" style="font-size: 1.2rem;">Kepada Bapak/Ibu/Saudara/i</p>
+            <h4 id="guest-name" class="fw-light mb-5">[Nama Tamu]</h4>
+            <button onclick="openInvitation()" class="btn btn-minimal">Buka Undangan</button>
+        </div>
+    </div>
 
-  <section class="detail">
-    <h3>Akad & Resepsi</h3>
-    <p><strong>Tanggal:</strong> Hari, xx Bulan 2026</p>
-    <p><strong>Waktu:</strong> 09.00 WIB</p>
-    <p><strong>Tempat:</strong> cafe</p>
-  </section>
+    <main id="main-content">
+        
+        <section class="hero-section">
+            <div class="container" data-aos="fade-up">
+                <div class="couple-frame mx-auto">
+                    <img src="gitar.png" alt="Fey & Mbi" class="couple-main-img">
+                </div>
+                
+                <h1 class="display-4">Fetty Ayu Pramitha (Fey)</h1>
+                <p class="font-serif fst-italic h4 my-2">&</p>
+                <h1 class="display-4 mb-4">Feby Nugraha (Mbi)</h1>
+                
+                <div class="line-deco"></div>
+                <p class="small text-uppercase opacity-75" style="letter-spacing: 3px;">
+                    'Kami berharap Anda menjadi bagian dari hari istimewa kami'
+                </p>
+                
+                <div id="countdown" class="my-5 py-4">
+                    <div class="countdown-item"><span id="days" class="h2 d-block">00</span><small>HARI</small></div>
+                    <div class="countdown-item"><span id="hours" class="h2 d-block">00</span><small>JAM</small></div>
+                    <div class="countdown-item"><span id="minutes" class="h2 d-block">00</span><small>MENIT</small></div>
+                    <div class="countdown-item"><span id="seconds" class="h2 d-block">00</span><small>DETIK</small></div>
+                </div>
 
-  <section class="gallery">
-    <h3>Galeri</h3>
-    <img src="foto1.jpg" alt="Foto pasangan">
-  </section>
+                <h4 class="h5 mb-4 font-serif">Rabu, 17 Desember 2025</h4>
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Fey+%26+Mbi&dates=20251217T010000Z/20251217T140000Z" target="_blank" class="btn btn-minimal">
+                    Save the Date
+                </a>
+            </div>
+        </section>
 
-  <section class="footer">
-    <p>Merupakan suatu kehormatan bagi kami apabila berkenan hadir</p>
-  </section>
+        <section class="story-section">
+            <div class="container py-5">
+                <div class="story-overlay text-center" data-aos="fade-in">
+                    <h2 class="display-5 mb-5 font-serif">The Red String Theory</h2>
+                    <p class="font-serif fs-5 lh-lg fst-italic">
+                        "Have you ever heard of the Red String Theory? It suggests that we are connected to our soulmate by an invisible red thread, regardless of time, place, or circumstances. This is our story."
+                        <br><br>
+                        "We grew up separately, unaware of each other's existence. We walked our own paths, experienced our own joys, and healed our own wounds. We fell, we learned, and we kept moving forward until the universe finally intertwined our threads."
+                        <br><br>
+                        "It is breathtaking how God orchestrates His surprises. After years of running and searching, we realized how close we had always been. This isn't just an end to our search, but the beginning of a lifetime. We met to continue the journey—hand in hand, promising before God to cherish one another until our very last breath."
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <section class="py-5 bg-white text-dark text-center">
+            <div class="container py-5" data-aos="fade-up">
+                <h2 class="display-5 mb-5 font-serif">Akad & Resepsi</h2>
+                <h4 class="fw-bold mb-1">Gedung Pertemuan</h4>
+                <p class="text-uppercase mb-4" style="letter-spacing: 2px;">Jl. Alamat Lengkap No. 123, Kota Anda</p>
+                <a href="https://maps.google.com" target="_blank" class="btn btn-outline-dark btn-sm px-4">LIHAT GOOGLE MAPS</a>
+            </div>
+        </section>
+
+        <section class="wishes-section">
+            <div class="container py-5 text-center">
+                <h2 class="display-5 mb-2 font-serif">Ucapkan Sesuatu</h2>
+                <p class="font-serif fst-italic mb-5">Berikan Ucapan & Doa Restu</p>
+                
+                <div class="d-flex justify-content-center gap-5 mb-5">
+                    <div><i class="bi bi-person-check fs-2"></i><br><small>142 Hadir</small></div>
+                    <div><i class="bi bi-person-x fs-2"></i><br><small>12 Berhalangan</small></div>
+                </div>
+
+                <div class="row justify-content-center text-start">
+                    <div class="col-md-6 bg-black bg-opacity-60 p-4 border border-secondary">
+                        <form id="rsvp-form">
+                            <input type="text" class="form-control mb-3" placeholder="Nama Anda" required>
+                            <select class="form-select mb-3">
+                                <option value="hadir">Hadir</option>
+                                <option value="tidak">Tidak Hadir</option>
+                            </select>
+                            <textarea class="form-control mb-3" rows="3" placeholder="Ucapan & Doa" required></textarea>
+                            <button type="submit" class="btn btn-minimal w-100">Kirim Ucapan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
